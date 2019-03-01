@@ -75,7 +75,7 @@ class MCStockOption:
     
 
 
-
+# European Call option
 class MCEuroCallOption(MCStockOption):
     
     '''Defined a Monte Carlo European call option class.'''
@@ -118,7 +118,7 @@ class MCEuroCallOption(MCStockOption):
 
 
 
-
+# European Put Option
 class MCEuroPutOption(MCStockOption):
     
     '''Defined a Monte Carlo European put option class.'''
@@ -159,7 +159,7 @@ class MCEuroPutOption(MCStockOption):
     
    
     
-    
+# Asian Call option    
 class MCAsianCallOption(MCStockOption):
     
     '''Defined a Monte Carlo Asian call option class.'''
@@ -201,7 +201,7 @@ class MCAsianCallOption(MCStockOption):
     
     
     
-    
+# Asian put option    
 class MCAsianPutOption(MCStockOption):
     
     '''Defined a Monte Carlo Asian put option class.'''
@@ -242,7 +242,7 @@ class MCAsianPutOption(MCStockOption):
 
 
 
-
+# Lookback call option
 class MCLookbackCallOption(MCStockOption):
     
      '''Defined a Monte Carlo Lookback call option.'''
@@ -281,7 +281,7 @@ class MCLookbackCallOption(MCStockOption):
 
 
 
-
+# Lookback Put option
 class MCLookbackPutOption(MCStockOption):
     
     '''Defined a Monte Carlo Lookback put option.'''
@@ -319,7 +319,7 @@ class MCLookbackPutOption(MCStockOption):
     
     
     
-    
+# Calculate run times for different trials    
 def run_time():
     trials = [10, 100, 1000, 10000, 100000, 1000000]
     for i in range(len(trials)):
