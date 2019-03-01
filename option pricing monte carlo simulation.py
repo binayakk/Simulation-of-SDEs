@@ -11,7 +11,7 @@ import statistics
 import time
 
 
-#Problem 1:
+
 class MCStockOption:
     
     '''Defined a Monte Carlo Stock option class.'''
@@ -37,7 +37,7 @@ class MCStockOption:
                 ', sigma='+'%4.2f'%self.sigma + ', t=' + '%4.2f'%self.t + ', nsteps=' + str(self.nsteps) +', ntrials=' + str(self.ntrials)
                 
     
-#Problem 2:    
+  
     def generate_stock_prices(self):
         
         '''Method to get stock prices from Monte Carlo Simulation.'''
@@ -56,7 +56,7 @@ class MCStockOption:
         
         return stk_price
     
-#Problem 3.a:    
+   
     def value(self):
         
         '''Method to calculate the value of an option.'''
@@ -64,7 +64,7 @@ class MCStockOption:
         print ('Base class MCStockOption has no concrete implementation of .value().')
         return 0
     
-#Problem 3.b:    
+  
     def stderr(self):
         
         '''Method to calculate the standard deviation error.'''
@@ -75,7 +75,7 @@ class MCStockOption:
     
 
 
-#Problem 4:
+
 class MCEuroCallOption(MCStockOption):
     
     '''Defined a Monte Carlo European call option class.'''
@@ -118,7 +118,7 @@ class MCEuroCallOption(MCStockOption):
 
 
 
-#Problem 5:
+
 class MCEuroPutOption(MCStockOption):
     
     '''Defined a Monte Carlo European put option class.'''
@@ -159,7 +159,7 @@ class MCEuroPutOption(MCStockOption):
     
    
     
-#Problem 6:    
+    
 class MCAsianCallOption(MCStockOption):
     
     '''Defined a Monte Carlo Asian call option class.'''
@@ -201,7 +201,7 @@ class MCAsianCallOption(MCStockOption):
     
     
     
-#Problem 7:    
+    
 class MCAsianPutOption(MCStockOption):
     
     '''Defined a Monte Carlo Asian put option class.'''
@@ -242,7 +242,7 @@ class MCAsianPutOption(MCStockOption):
 
 
 
-#Problem 8:
+
 class MCLookbackCallOption(MCStockOption):
     
      '''Defined a Monte Carlo Lookback call option.'''
@@ -281,7 +281,7 @@ class MCLookbackCallOption(MCStockOption):
 
 
 
-# Problem 9:
+
 class MCLookbackPutOption(MCStockOption):
     
     '''Defined a Monte Carlo Lookback put option.'''
